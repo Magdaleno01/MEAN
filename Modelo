@@ -1,0 +1,17 @@
+//Crear el modelo 
+
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+
+var Modelo = new Schema({
+
+	nombre :  String,
+	creador :  String,
+	telefono : Number
+
+});
+
+var eventos = mongoose.model('eventos',Modelo);
+
+module.exports = eventos;
